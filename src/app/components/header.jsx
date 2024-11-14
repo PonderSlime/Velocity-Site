@@ -74,7 +74,7 @@ export default function Header() {
                                         key={item.name}
                                         className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50 dark:hover:bg-emerald-900"
                                     >
-                                        <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-teal-950 group-hover:bg-white dark:group-hover:bg-gray-800 ">
+                                        <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 dark:bg-teal-800 group-hover:bg-white dark:group-hover:bg-gray-800 ">
                                             <item.icon aria-hidden="true" className="size-6 text-gray-600 dark:text-white group-hover:text-indigo-600" />
                                         </div>
                                         <div className="flex-auto">
@@ -92,7 +92,7 @@ export default function Header() {
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900"
+                                        className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-emerald-900"
                                     >
                                         <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400 dark:text-white group-hover:text-indigo-600" />
                                         {item.name}
@@ -109,7 +109,7 @@ export default function Header() {
                     </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                    <a href="#" className="text-sm/6 px-5 py-2.5 rounded-full font-semibold text-gray-900 dark:text-white bg-lime-300 dark:bg-lime-800">
                         Download <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
@@ -166,7 +166,7 @@ export default function Header() {
                             <div className="py-6">
                                 <a
                                     href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900"
+                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-teal-800 focus:outline"
                                 >
                                     Download
                                 </a>

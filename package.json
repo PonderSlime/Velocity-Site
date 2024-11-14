@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "env TAILWIND_MODE=watch NODE_ENV=development npx next dev",
     "build": "next build",
     "start": "next start",
+    "launch": "npx tailwindcss -i ./src/app/input.css -o ./src/app/output.css && next build && next start",
     "lint": "next lint"
   },
   "dependencies": {

@@ -10,5 +10,5 @@ module.exports = {
             }
         }
     },
-    plugins: ["responsive"],
+    plugins: ["responsive", "motion", "aos"],
 }

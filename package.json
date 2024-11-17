@@ -16,6 +16,7 @@
     "@uidotdev/usehooks": "^2.4.1",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.20",
+    "fortawesome": "^0.0.1-security",
     "motion": "^11.11.17",
     "next": "^15.0.3",
     "node": "^18.20.5",

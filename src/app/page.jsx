@@ -1,5 +1,5 @@
 "use client"
-import { MotionFadeIn, BrowserFeaturesListWithImageSidebar, Header } from "./components/components.jsx"
+import { MotionFadeIn, BrowserFeaturesListWithImageSidebar, Header, BrowserSpecs, Downloads,Footer } from "./components/components.jsx"
 
 import "./output.css"
 
@@ -79,7 +79,9 @@ export default function App() {
         </div>
       </section>
       <BrowserFeaturesListWithImageSidebar />
-      
+      <BrowserSpecs />
+      <Downloads />
+      <Footer />
     </body>
   );
 }

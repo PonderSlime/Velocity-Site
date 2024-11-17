@@ -27,7 +27,7 @@ const project = [
     { name: "Code", description: "View our whole project's code", href: '#', icon: SquaresPlusIcon },
 ]
 const callsToAction = [
-    { name: "Download", href: '#', icon: ArrowDownCircleIcon },
+    { name: "Download", href: '#download', icon: ArrowDownCircleIcon },
     { name: "Talk to our team", href: '#', icon: PhoneIcon },
 ]
 
@@ -58,9 +58,19 @@ export default function Header() {
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+                    
+                    <a href="#stats" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        Stats
+                    </a>
+                    <a href="#features" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        Features
+                    </a>
+                    <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
+                        About
+                    </a>
                     <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white">
-                            Specs
+                            More
                             <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 dark:text-white" />
                         </PopoverButton>
                         <PopoverPanel
@@ -100,15 +110,9 @@ export default function Header() {
                             </div>
                         </PopoverPanel>
                     </Popover>
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
-                        Features
-                    </a>
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900 dark:text-white">
-                        About
-                    </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm/6 px-5 py-2.5 rounded-full font-semibold text-gray-900 dark:text-white bg-lime-300 dark:bg-lime-800">
+                    <a href="#download" className="text-sm/6 px-5 py-2.5 rounded-full font-semibold text-gray-900 dark:text-white bg-lime-300 dark:bg-lime-800">
                         Download <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
@@ -137,9 +141,19 @@ export default function Header() {
                     <div className="mt-6 flow-root">
                         <div className="-m-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
+                                
+                                <a href="#features" className="block px-3 py-2.5 text-base/5 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
+                                    Features
+                                </a>
+                                <a href="#" className="block px-3 py-2.5 text-base/5 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
+                                    About
+                                </a>
+                                <a href="#" className="block px-3 py-2.5 text-base/5 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
+                                    Stats
+                                </a>
                                 <Disclosure as="div" className="-mx-2">
                                     <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
-                                        Specs
+                                        More
                                         <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 dark:text-white" />
                                     </DisclosureButton>
                                     <DisclosurePanel className="mt-2 space-y-2">
@@ -155,16 +169,10 @@ export default function Header() {
                                         ))}
                                     </DisclosurePanel>
                                 </Disclosure>
-                                <a href="#" className="block px-3 py-2.5 text-base/5 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
-                                    Features
-                                </a>
-                                <a href="#" className="block px-3 py-2.5 text-base/5 font-semibold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-emerald-900">
-                                    About
-                                </a>
                             </div>
                             <div className="py-6">
                                 <a
-                                    href="#"
+                                    href="#download"
                                     className="-mx-2 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 dark:text-white hover:bg-teal-800 focus:outline"
                                 >
                                     Download

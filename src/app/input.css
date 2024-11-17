@@ -19,3 +19,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+svg.fa-simple-velocity-browser-icon[data-prefix="simple-velocity"] {
+  fill-rule: evenodd;
+}

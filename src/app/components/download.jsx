@@ -1,6 +1,6 @@
-import { faLinux, faWindows } from "@fortawesome/free-brands-svg-icons"
-import { faCode } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLinux, faWindows } from "@fontawesome/free-brands-svg-icons"
+import { faCode } from "@fontawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fontawesome/react-fontawesome"
 import { MotionFadeIn } from "./components.jsx"
 
 const downloads = [
